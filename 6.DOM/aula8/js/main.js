@@ -3,3 +3,4 @@ var nome = "Fernando ";
 var sobrenome = "César";
 
 document.querySelector('#txtNome').value = nome + sobrenome;
+document.querySelector('#txtNome').disabled = true;
