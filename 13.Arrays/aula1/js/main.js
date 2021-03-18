@@ -1,0 +1,36 @@
+//Forma literal
+/*
+var arr = new Array(0,2,3, 'ioo');
+console.log(arr);
+*/
+
+var arr = ['1',20,3,4,5, 'kkkj', 20, '30'];
+
+var sohNumeros = arr.every( function(el) {
+    return typeof el === 'number';
+} ); 
+console.log(sohNumeros);
+
+//************** */
+
+var aoMenosUmNumero = arr.some( function(el) {
+    return typeof el === 'number';
+} ); 
+console.log(aoMenosUmNumero);
+
+var numeros = arr.filter(function(el, i, arr) {
+    return typeof el === 'number';
+});
+console.log(numeros);
+
+arr.forEach(function(el, i, arr) {
+  console.log('el = ', el, ' | indice = ', i, ' | i - ', arr.toString());
+});
+console.log('------------------');
+
+var posicaoStr1 = arr.indexOf(20, 5);
+console.log('posicaoStr1', posicaoStr1);
+
+var posicaoStr2 = arr.lastIndexOf(20, 5);
+console.log('posicaoStr2', posicaoStr2);
+
